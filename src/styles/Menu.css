@@ -1,0 +1,16 @@
+.menu {
+}
+
+.menu a {
+    font-size: 12px;
+}
+
+.menu .active {
+  color: rgb(20,20,20);
+  padding: 20px;
+}
+
+.item {
+  color: rgb(20,20,20);
+}
+
