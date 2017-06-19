@@ -1,22 +1,21 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Link from 'redux-first-router-link'
-
-import styles from '../styles/Menu.css'
+import '../styles/Menu.css'
 
 const Menu = ({ onClick, path }) => {
     return (
-        <div id="menu" className={styles}>
-        <Link className={active(path, '/')} href="/">HOME</Link>
+        <div id="menu" className='menu'>
+        <Link className={active(path, '/')} href="/">Home</Link>
         <Link className={active(path, '/about')} href="/about">About page</Link>
-        <hr />
+        <Link className={active(path, '/pictures')} href="/pictures">Picture page</Link>
         </div>
     )
 }
   
-
-const active = (currentPath, path) =>
-  currentPath === path ? styles.active : styles.item
+const active = (currentPath, path) => {
+    return currentPath === path ? 'active' : 'item'
+}  
 
 const createAction = (type, category) => {
   return {

@@ -1,16 +1,19 @@
 .menu {
+  color: red;
 }
 
 .menu a {
-    font-size: 12px;
+    padding: 0 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .menu .active {
-  color: rgb(20,20,20);
-  padding: 20px;
+  color:lightblue;
 }
 
 .item {
-  color: rgb(20,20,20);
+  color: white;
 }
 

@@ -7,8 +7,19 @@ export const page = (state = 'HOME', action = {}) => {
       return 'Home'
     case 'ABOUT':
       return 'About'
+    case 'PICTURES':
+      return 'Pictures'
     case NOT_FOUND:
       return 'NotFound'
+    default:
+      return state
+  }
+}
+
+export const pictureReducer = (state = {pictures: []}, action = {}) => {
+  switch(action.type) {
+    case 'PICTURES_FETCHED':
+      return {...state, ...action }
     default:
       return state
   }

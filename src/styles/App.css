@@ -1,13 +1,31 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #232323;
+  font-size: 16px;
+  color: white;
+}
+
 .App {
   text-align: center;
-  font-family: 'Roboto Mono'
+  font-family: 'Roboto Condensed';
+  
 }
 
 .App-header {
-  background-color: #222;
-  height: 100px;
+  background-color: black;
+  height: 85px;
   padding: 20px;
   color: white;
+}
+
+p {
+  color: #4e4e4e
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .App-intro {
